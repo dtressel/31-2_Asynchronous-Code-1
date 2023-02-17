@@ -14,7 +14,7 @@ function startNewDeck() {
       deckId = res.data.deck_id;
       drawCardButton.classList.remove('visibility-hidden');
     })
-    .catch(err => console.log(err));
+    .catch(err => alert(err));
 }
 
 function drawCard() {
@@ -31,4 +31,5 @@ function drawCard() {
       newCard.style.left = `${Math.floor(Math.random() * 40) - 20}px`;
       cardPile.append(newCard);
     })
+    .catch(err => alert(err));
 }

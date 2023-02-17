@@ -23,7 +23,7 @@ function submitSingleClick() {
     .then(res => {
       document.getElementById('single-number-display').textContent = res.data.text;
     })
-    .catch(err => console.log(err));
+    .catch(err => alert(err));
 }
 
 function submitMultipleClick() {
@@ -43,7 +43,7 @@ function submitMultipleClick() {
         multipleNumberDisplay.append(newP);
       }
     })
-    .catch(err => console.log(err));
+    .catch(err => alert(err));
 }
 
 function submitForFourClick() {
@@ -72,5 +72,5 @@ function submitForFourClick() {
         fourFactsDisplay.append(newP);
       }
     })
-    .catch(err => console.log(err));
+    .catch(err => alert(err));
 }
